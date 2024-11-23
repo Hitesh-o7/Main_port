@@ -9,11 +9,37 @@
         font-size: 23px;
         font-weight: 300;
         box-sizing: border-box;
-        align-items: center; 
+        align-items: center;
+
+        .testLogo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            color: white;
+            text-align: center;
+
+            @media (max-width:720px) {
+                margin-top:30px;
+                left: 25%;
+            }
+
+            p{
+                color: white;
+                font-size: 3rem;
+                rotate: -8deg;
+                font-family:'Gistesy', sans-serif;
+            }
+        }
 
         .logo {
             display: flex;
             cursor: pointer;
+
+            @media (max-width:720px) {
+                display: none   ;
+            }
             p {
                 margin: 0px;
                 transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
@@ -85,17 +111,18 @@
             &::before {
                 content: "";
                 display: block;
-                height: 1px;
+                height: 3px;
                 width: 40%;
                 margin: auto;
                 background-color: white;
                 position: relative;
-                transition: transform 0.3s;
+                transition: transform .5s;
             }
 
             &::after {
                 top: -5px;
             }
+
 
             &::before {
                 top: 5px;

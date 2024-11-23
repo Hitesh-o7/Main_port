@@ -13,6 +13,31 @@
     --foreground: #ededed;
   }
 }
+@font-face {
+    font-family: 'Rosca';
+    src: url('/fonts/rosca.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gistesy';
+    src: url('/fonts/Gistesy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'testLogoo';
+    src: url('/public/fonts/BastligaOne.otf') format('opentype'); /* Specify the format of the font */
+    font-weight: normal; /* Adjust weights as needed */
+    font-style: normal; /* Adjust styles (normal, italic, etc.) */
+  }
+  @font-face {
+    font-family: 'testLogo';
+    src: url('/public/fonts/BastligaOne.otf') format('opentype'); /* Specify the format of the font */
+    font-weight: normal; /* Adjust weights as needed */
+    font-style: normal; /* Adjust styles (normal, italic, etc.) */
+  }
 
 body {
   color: var(--foreground);

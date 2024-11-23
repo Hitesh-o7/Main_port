@@ -37,6 +37,9 @@ export default function Header() {
     return (
         <>
             <div ref={header} className={styles.header}>
+            <div className={styles.testLogo}>
+        <p>Hitesh</p>
+    </div>
                 <Magnetic>
                     <div className={styles.logo}>
                         <p className={styles.copyright}>©</p>
