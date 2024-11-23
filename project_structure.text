@@ -1,0 +1,19 @@
+- .eslintrc.json
+- .gitignore
+- jsconfig.json
+- next.config.mjs
+- package-lock.json
+- package.json
+- postcss.config.mjs
+- public
+- README.md
+- src
+  - app
+    - globals.css
+    - layout.js
+    - page.js
+  - components
+    - Header
+      - Header.jsx
+      - style.module.scss
+- tailwind.config.js
