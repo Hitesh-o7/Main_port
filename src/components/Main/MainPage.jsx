@@ -1,5 +1,6 @@
 // Import the necessary components
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import Image from 'next/image';
 import styles from './style.module.scss';
 
 export default function MainPage() {
@@ -31,7 +32,13 @@ export default function MainPage() {
                     <div className={styles.overflow_hidden}>
                         <div className={styles.image_div}>
                             <Parallax speed={-30}>
-                                <img src="/aboutimg.jpg" alt="Self Image" />
+                                <Image
+                                    src="/aboutimg.jpg"
+                                    alt="Self Image"
+                                    width={800} // Match your height from SCSS
+                                    height={800} // Match your height from SCSS
+                                    layout="intrinsic" // Ensures proper aspect ratio
+                                />
                             </Parallax>
                         </div>
                     </div>

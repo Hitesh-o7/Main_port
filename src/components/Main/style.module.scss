@@ -107,13 +107,6 @@
         //     linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0.1));
         // -webkit-mask-composite: intersect;
 
-            .image_div {
-                position: relative; /* Ensure the child stays inside the overflow container */
-                img {
-                    height: 800px;
-                    width: auto;
-
-                }
-            }
+            
         }
     }
