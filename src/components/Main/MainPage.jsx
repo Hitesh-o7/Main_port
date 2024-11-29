@@ -22,7 +22,7 @@ export default function MainPage() {
                         <p>
                             Designer & Webflow expert
                             Helping you build beautiful and
-                            Scalable website experiences
+                            Scalable website experiencess
                         </p>
                     </div>
                 </div>
