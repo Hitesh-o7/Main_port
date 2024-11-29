@@ -1,0 +1,99 @@
+    .AboutMain{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 200px;
+        font-family: "About", Arial, sans-serif;
+
+        .text{
+            font-size: 1.35rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            .line1{
+                height: 50px;
+                .fields {
+                    font-family: JW\.Sans-Bold;
+                    position: relative
+                }
+
+                .fields:after,.fields:before {
+                    background-color: #dadad7;
+                    bottom: -.313rem;
+                    content: "";
+                    height: .063rem;
+                    left: 0;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    width: 100%
+                }
+
+                .fields:before {
+                    transform: translateY(0) rotate(-2deg)
+                }
+
+                .fields:after {
+                    transform: translateY(0) rotate(2deg)
+                }
+                span{
+                    font-family: "Comic", Arial, sans-serif;
+                }
+            }
+            .line2{
+                height: 50px;
+            }
+            .line3{
+                height: 50px;
+
+                .tailor {
+                    font-family: "JW.Sans-Bold", Arial, sans-serif;
+                    position: relative;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+                .tailor:before {
+                    transform: translateY(-50%) rotate(-10deg);
+                }
+
+                .tailor:after,
+                .tailor:before {
+                    border: .128rem solid #dadad7;
+                    border-radius: 50%;
+                    content: "";
+                    height: 3.75rem;
+                    position: absolute;
+                    top: 50%;
+                    width: 7.25rem;
+                    z-index: 1;
+                }
+
+                .tailor:after {
+                    right: -.4rem;
+                    transform: translateY(-50%) rotate(-6deg);
+                }
+
+            }
+            .line4{
+                height: 50px;
+            }
+            .line5{
+                height: 50px;
+            }
+            .line6 {
+                height: 50px;
+                span {
+                border: 0.063rem solid #dadad7;
+                border-radius: 100%;
+                display: inline-block;
+                font-family: "JW.Sans-Bold", Arial, sans-serif;
+                padding: 0.4rem;
+                transform: skew(-10deg);
+                position: relative;
+                }
+            }
+
+        }
+    }

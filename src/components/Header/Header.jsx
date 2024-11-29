@@ -12,10 +12,10 @@ import Magnetic from "../../ui_components/Magnetic/Magnetic";
 export default function Header() {
     const header = useRef(null);
     const [isActive, setIsActive] = useState(false);
-    const pathname = usePathname(); // Get the current route
+    const pathname = usePathname();
     const button = useRef(null);
 
-    // Reset `isActive` when the route changes
+
     useEffect(() => {
         setIsActive(false);
     }, [pathname]);
@@ -29,7 +29,7 @@ export default function Header() {
                 start: 0,
                 end: window.innerHeight,
                 onLeave: () => { gsap.to(button.current, { scale: 1, duration: 0.25, ease: "power1.out" }) },
-                onEnterBack: () => { gsap.to(button.current, { scale: 0, duration: 0.25, ease: "power1.out" }, setIsActive(false)) }
+                onEnterBack: () => { gsap.to(button.current, { scale: 1, duration: 0.25, ease: "power1.out" }, setIsActive(false)) }
             }
         });
     }, []);
@@ -38,8 +38,8 @@ export default function Header() {
         <>
             <div ref={header} className={styles.header}>
             <div className={styles.testLogo}>
-        <p>Hitesh</p>
-    </div>
+            <p>Hitesh</p>
+            </div>
                 <Magnetic>
                     <div className={styles.logo}>
                         <p className={styles.copyright}>©</p>

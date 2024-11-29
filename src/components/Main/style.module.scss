@@ -1,0 +1,119 @@
+    .MainPag{
+        position: relative;
+        height: auto;
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        padding: 70px;
+
+        .left{
+            height: auto;
+            width: 50%;
+            padding-top: 150px;
+
+            .top{
+                display: flex;
+                cursor: default;
+                height: 100px;
+
+                .hover_container {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    justify-content: space-between;
+
+                    .green_dot {
+                      width: 28px;
+                      height: 28px;
+                      background: radial-gradient(circle, rgb(1, 255, 168) 50%, rgba(34, 197, 94, 0.3) 75%, transparent 100%);
+                      border-radius: 50%;
+                      animation: blink 3s infinite ease-in-out;
+                      transition: all 0.3s ease;
+
+
+
+                      &:hover {
+                        animation: none;
+                        width: 150px;
+                        height: 45px;
+                        border-radius: 10px;
+                        background: transparent;
+                        box-shadow:
+                                    inset 0 0 20px rgba(1, 255, 168,.5),
+                                    0 0 40px rgba(1, 255, 168,.5);
+                        border: 1.5px solid #32de84;
+                      }
+
+                      @keyframes blink {
+                        0%, 100% {
+                          opacity: 1;
+                          transform: scale(1);
+                          box-shadow: 0 0 20px rgba(50, 205, 50, 0.6), 0 0 30px rgba(50, 205, 50, 0.4); /* Glow effect */
+                        }
+                        50% {
+                          opacity: 0;
+                          box-shadow: 0 0 10px rgba(50, 205, 50, 0.3), 0 0 15px rgba(50, 205, 50, 0.2); /* Dim glow */
+                        }
+                      }
+                    }
+
+                    .text {
+                        position: absolute;
+                      margin-left: 35px;
+                      font-size: 1.82rem;
+                      color: #fff;
+                    }
+
+
+                }
+            }
+
+            .middle{
+                width: 100%;
+                margin-bottom: 50px;
+                p{
+                    line-height: 6rem;
+                    font-size: 7rem;
+                }
+            }
+
+            .bottom{
+                width: 40%;
+                font-size: 1.13rem;
+            }
+        }
+        .right{
+            height: auto;
+            width: 50%;
+            display: flex;
+            padding: 0px 70px;
+            justify-content: center;
+
+            .overflow_hidden {
+                overflow: hidden;
+                position: relative;
+                height: 800px;
+                filter: blur(0); /* Start without blur on the image itself */
+                    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1));
+                    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1));
+            }
+        //     mask-image:
+        //     linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1)),
+        //     linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.1));
+        // mask-composite: intersect;
+
+        // -webkit-mask-image:
+        //     linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1)),
+        //     linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0.1));
+        // -webkit-mask-composite: intersect;
+
+            .image_div {
+                position: relative; /* Ensure the child stays inside the overflow container */
+                img {
+                    height: 800px;
+                    width: auto;
+
+                }
+            }
+        }
+    }

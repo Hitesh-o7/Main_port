@@ -19,6 +19,7 @@ export default function Rounded({children, backgroundColor="#455CE9", ...attribu
   const manageMouseEnter = () => {
     if(timeoutId) clearTimeout(timeoutId)
     timeline.current.tweenFromTo('enter', 'exit');
+
   }
 
   const manageMouseLeave = () => {

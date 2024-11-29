@@ -1,0 +1,41 @@
+.work_container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center; 
+
+    .card {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s ease; /* Optional: Smooth hover animation */
+    }
+
+    /* Card positions */
+    .card:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+        transform: translateX(220px); /* Shift slightly to the left */
+    }
+
+    .card:nth-child(2) {
+        grid-column: 2;
+        grid-row: 2;
+        transform: translateX(-220px); /* Shift slightly to the right */
+    }
+
+    .card:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3;
+        transform: translateX(220px); /* Shift slightly to the left */
+    }
+
+    .card:nth-child(4) {
+        grid-column: 2;
+        grid-row: 4;
+        transform: translateX(-220px); /* Shift slightly to the right */
+    }
+}

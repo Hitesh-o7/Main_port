@@ -1,11 +1,12 @@
     .header {
-        position: absolute;
+        position: relative;
         display: flex;
         z-index: 1;
-        top: 0;
+        top: 30px;
         color: white;
         padding: 35px;
         width: 100%;
+        height: 30px;
         font-size: 23px;
         font-weight: 300;
         box-sizing: border-box;
@@ -13,7 +14,7 @@
 
         .testLogo {
             position: absolute;
-            top: 50%;
+            top: 70%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-weight: bold;
@@ -21,7 +22,7 @@
             text-align: center;
 
             @media (max-width:720px) {
-                margin-top:30px;
+                margin-top:20px;
                 left: 25%;
             }
 
@@ -29,6 +30,7 @@
                 color: white;
                 font-size: 3rem;
                 rotate: -8deg;
+                font-weight: 900;
                 font-family:'Gistesy', sans-serif;
             }
         }
@@ -88,6 +90,7 @@
         transform: scale(1);
         position: fixed;
         right: 0px;
+        top:20px;
         z-index: 4;
 
         .button {
@@ -96,7 +99,7 @@
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            background-color: #1C1D20;
+            background-color: #0a0a0a;
             cursor: pointer;
             display: flex;
             align-items: center;
