@@ -1,19 +1,47 @@
-    .AboutMain{
+        .AboutMain{
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 200px;
+        padding: 20px;
         font-family: "About", Arial, sans-serif;
 
+
+
+
         .text{
-            font-size: 1.35rem;
             text-align: center;
             display: flex;
+            gap: 10px;
             flex-direction: column;
+            @media (min-width: 1441px) {
+                font-size: 1.35rem;
+            }
+            @media (min-width: 1025px) and (max-width: 1440px) {
+                font-size:1.35rem;
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                font-size: 1.35rem;
+                text-align: left;
+            }
+            @media (min-width: 481px) and (max-width: 767px) {
+                font-size: 1.33rem;
+                text-align: left;
+            }
+            @media (max-width: 480px) {
+                font-size: 1.1rem;
+                text-align: left;
+            }
+
+
+
+
+
+
+
 
             .line1{
-                height: 50px;
                 .fields {
                     font-family: JW\.Sans-Bold;
                     position: relative
@@ -41,17 +69,16 @@
                     font-family: "Comic", Arial, sans-serif;
                 }
             }
-            .line2{
-                height: 50px;
-            }
+
             .line3{
-                height: 50px;
 
                 .tailor {
                     font-family: "JW.Sans-Bold", Arial, sans-serif;
                     position: relative;
-                    font-size: 1.5rem;
                     text-align: center;
+                    @media (max-width:920px) {
+                        display: none;
+                    }
                 }
 
                 .tailor:before {
@@ -76,14 +103,8 @@
                 }
 
             }
-            .line4{
-                height: 50px;
-            }
-            .line5{
-                height: 50px;
-            }
+
             .line6 {
-                height: 50px;
                 span {
                 border: 0.063rem solid #dadad7;
                 border-radius: 100%;

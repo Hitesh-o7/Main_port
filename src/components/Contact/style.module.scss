@@ -4,15 +4,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #141516;
+    background-color: transparent;
     position: relative;
     overflow: hidden;
 
     .body {
         padding-top: 300px;
         width: 100%;
-        max-width: 1800px;
-        background-color: #141516;
+        max-width: 1800px; 
 
         .link {
             text-decoration: none; /* Removes underline from links */
@@ -267,4 +266,3 @@
         }
     }
 }
-    

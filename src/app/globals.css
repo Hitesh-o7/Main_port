@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
- 
+
 
 
 @font-face {
@@ -31,17 +31,24 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Manrope';
+    src: url('/fonts/Manrope.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html{
     scroll-behavior: smooth;
     overscroll-behavior: none;
 }
 body {
-  color: #DADAD7;
+  color: #FFF7E9;
   background: #0a0a0a;
   background-image: url('/grain.gif');
   background-position: center;
   background-repeat: repeat;
   background-attachment: scroll;
   background-blend-mode: multiply;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Manrope, sans-serif;
 }

@@ -1,11 +1,39 @@
 - .eslintrc.json
 - .gitignore
+- .idea
+  - .gitignore
+  - inspectionProfiles
+    - Project_Default.xml
+  - modules.xml
+  - portfolio2.iml
+  - vcs.xml
+  - workspace.xml
 - jsconfig.json
 - next.config.mjs
 - package-lock.json
 - package.json
 - postcss.config.mjs
+- project_structure.text
 - public
+  - aboutimg.jpg
+  - fonts
+    - about.woff2
+    - Amester.ttf
+    - BastligaOne.otf
+    - BastligaOne.ttf
+    - comic.woff2
+    - day.ttf
+    - Gistesy.ttf
+    - Manrope.ttf
+    - rosca-slant.otf
+    - rosca.otf
+    - Virtual.otf
+  - grain.gif
+  - powell.jpg
+  - Screenshot 2024-07-08 001903.png
+  - silencio.png
+  - wix.jpg
+  - world.gif
 - README.md
 - src
   - app
@@ -13,7 +41,44 @@
     - layout.js
     - page.js
   - components
-    - Header
-      - Header.jsx
+    - About
+      - About.jsx
       - style.module.scss
+    - Contact
+      - Contact.jsx
+      - style.module.scss
+    - Galleries
+      - Galleries.jsx
+      - style.module.scss
+    - Header
+      - animation.js
+      - Header.jsx
+      - nav
+        - Curve
+          - Curve.jsx
+          - style.module.scss
+        - Footer
+          - Footer.jsx
+          - style.module.scss
+        - Link
+          - Link.jsx
+          - style.module.scss
+        - Nav.jsx
+        - style.module.scss
+      - scrollAnimations.js
+      - style.module.scss
+    - Main
+      - MainPage.jsx
+      - style.module.scss
+    - WorkArt
+      - style.module.scss
+      - Work.jsx
+  - ui_components
+    - Magnetic
+      - Magnetic.jsx
+    - RoundedButton
+      - Roundend.jsx
+      - style.module.scss
+    - Scroll
+      - ScrollProgress.jsx
 - tailwind.config.js

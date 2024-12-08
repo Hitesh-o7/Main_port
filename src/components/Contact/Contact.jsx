@@ -18,7 +18,7 @@ export default function Contact() {
 
     return (
         <motion.div style={{ y }} ref={container} className={styles.contact}>
-            <div className={styles.body}>
+            <div className={styles.body}> 
                 <div className={styles.title}>
                     <span>
                         <div className={styles.imageContainer}>

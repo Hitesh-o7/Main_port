@@ -1,112 +1,163 @@
-    .MainPag{
-        position: relative;
+.MainPag {
+    position: relative;
+    height: auto;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* To handle content wrapping */
+    padding: 70px;
+
+    .left {
         height: auto;
-        margin-top: 30px;
-        width: 100%;
-        display: flex;
-        padding: 70px;
+        width: 50%;
+        padding-top: 150px;
 
-        .left{
-            height: auto;
-            width: 50%;
-            padding-top: 150px;
+        .top {
+            display: flex;
+            cursor: default;
+            height: 100px;
 
-            .top{
+            .hover_container {
                 display: flex;
-                cursor: default;
-                height: 100px;
+                align-items: center;
+                position: relative;
+                justify-content: space-between;
 
-                .hover_container {
-                    display: flex;
-                    align-items: center;
-                    position: relative;
-                    justify-content: space-between;
+                .green_dot {
+                    width: 28px;
+                    height: 28px;
+                    background: radial-gradient(circle, rgb(1, 255, 168) 50%, rgba(34, 197, 94, 0.3) 75%, transparent 100%);
+                    border-radius: 50%;
+                    animation: blink 3s infinite ease-in-out;
+                    transition: all 0.3s ease;
 
-                    .green_dot {
-                      width: 28px;
-                      height: 28px;
-                      background: radial-gradient(circle, rgb(1, 255, 168) 50%, rgba(34, 197, 94, 0.3) 75%, transparent 100%);
-                      border-radius: 50%;
-                      animation: blink 3s infinite ease-in-out;
-                      transition: all 0.3s ease;
-
-
-
-                      &:hover {
+                    &:hover {
                         animation: none;
                         width: 150px;
                         height: 45px;
                         border-radius: 10px;
                         background: transparent;
-                        box-shadow:
-                                    inset 0 0 20px rgba(1, 255, 168,.5),
-                                    0 0 40px rgba(1, 255, 168,.5);
+                        box-shadow: inset 0 0 20px rgba(1, 255, 168, 0.5), 0 0 40px rgba(1, 255, 168, 0.5);
                         border: 1.5px solid #32de84;
-                      }
+                    }
 
-                      @keyframes blink {
+                    @keyframes blink {
                         0%, 100% {
-                          opacity: 1;
-                          transform: scale(1);
-                          box-shadow: 0 0 20px rgba(50, 205, 50, 0.6), 0 0 30px rgba(50, 205, 50, 0.4); /* Glow effect */
+                            opacity: 1;
+                            transform: scale(1);
+                            box-shadow: 0 0 20px rgba(50, 205, 50, 0.6), 0 0 30px rgba(50, 205, 50, 0.4);
                         }
                         50% {
-                          opacity: 0;
-                          box-shadow: 0 0 10px rgba(50, 205, 50, 0.3), 0 0 15px rgba(50, 205, 50, 0.2); /* Dim glow */
+                            opacity: 0;
+                            box-shadow: 0 0 10px rgba(50, 205, 50, 0.3), 0 0 15px rgba(50, 205, 50, 0.2);
                         }
-                      }
                     }
+                }
 
-                    .text {
-                        position: absolute;
-                      margin-left: 35px;
-                      font-size: 1.82rem;
-                      color: #fff;
-                    }
+                .text {
+                    position: absolute;
+                    margin-left: 35px;
+                    font-size: 1.82rem;
+                    color: #fff;
+                }
+            }
+        }
 
+        .middle {
+            width: 100%;
+            margin-bottom: 50px;
+
+            p {
+                line-height: 5rem;
+                font-size: 7rem;
+                font-weight: 700;
+                @media (min-width: 1441px) {
+                    font-size: 1.35rem;
+                }
+                @media (min-width: 1025px) and (max-width: 1440px) {
+                    font-size:5rem;
+                    line-height: 5rem;
+                }
+
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    font-size: 5rem;
+                    line-height: 5rem;
+
+                }
+                @media (min-width: 481px) and (max-width: 767px) {
+                    font-size: 4rem;
+                    line-height: 5rem;
+
+                }
+                @media (max-width: 480px) {
+                    font-size: 3.2rem;
+                    line-height: 3rem;
 
                 }
             }
+        }
 
-            .middle{
-                width: 100%;
-                margin-bottom: 50px;
-                p{
-                    line-height: 6rem;
-                    font-size: 7rem;
-                }
-            }
+        .bottom {
+            width: 40%;
+            font-size: 1.13rem;
 
-            .bottom{
-                width: 40%;
+            @media (min-width: 1441px) {
+                width: 50%;
                 font-size: 1.13rem;
             }
-        }
-        .right{
-            height: auto;
-            width: 50%;
-            display: flex;
-            padding: 0px 70px;
-            justify-content: center;
-
-            .overflow_hidden {
-                overflow: hidden;
-                position: relative;
-                height: 800px;
-                filter: blur(0); /* Start without blur on the image itself */
-                    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1));
-                    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1));
+            @media (min-width: 1025px) and (max-width: 1440px) {
+                width: 60%;
+                font-size: 1.13rem;
             }
-        //     mask-image:
-        //     linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1)),
-        //     linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.1));
-        // mask-composite: intersect;
 
-        // -webkit-mask-image:
-        //     linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1)),
-        //     linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0.1));
-        // -webkit-mask-composite: intersect;
-
-            
+            @media (min-width: 768px) and (max-width: 1024px) {
+                width: 70%;
+                font-size: 1.12rem;
+            }
+            @media (min-width: 481px) and (max-width: 767px) {
+                width: 70%;
+                font-size: 1.1rem;
+            }
+            @media (max-width: 480px) {
+                width: 90%;
+                font-size: 1rem;
+            }
         }
     }
+
+    .right {
+        height: auto;
+        width: 50%;
+        display: flex;
+        padding: 0px 70px;
+        justify-content: center;
+
+        .overflow_hidden {
+            overflow: hidden;
+            position: relative;
+            height: 800px;
+            filter: blur(0);
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1));
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.1));
+        }
+    }
+
+    /* Responsive styles for smaller screens */
+    @media (max-width: 720px) {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 30px;
+
+        .left, .right {
+            width: 100%; /* Full width for both sections */
+            padding: 0; /* Reset padding for cleaner stacking */
+        }
+
+        .left {
+            padding-top: 50px;
+        }
+
+        .right {
+            padding-top: 20px;
+        }
+    }
+}
