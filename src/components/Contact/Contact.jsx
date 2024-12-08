@@ -18,17 +18,10 @@ export default function Contact() {
 
     return (
         <motion.div style={{ y }} ref={container} className={styles.contact}>
-            <div className={styles.body}> 
+            <div className={styles.body}>
                 <div className={styles.title}>
                     <span>
-                        <div className={styles.imageContainer}>
-                            <Image
-                                fill={true}
-                                alt={"image"}
-                                src={`/images/bgg.jpg`}
-                            />
-                        </div>
-                        <h2>Let&apos;s work</h2> {/* Escaped the apostrophe */}
+                <h2>Let&apos;s work</h2> {/* Escaped the apostrophe */}
                     </span>
                     <h2>together</h2>
                     <motion.div style={{ x }} className={styles.buttonContainer}>

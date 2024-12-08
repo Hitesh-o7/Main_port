@@ -1,5 +1,4 @@
 .contact {
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,11 +10,11 @@
     .body {
         padding-top: 300px;
         width: 100%;
-        max-width: 1800px; 
+        max-width: 1800px;
 
         .link {
             text-decoration: none; /* Removes underline from links */
-            color: inherit; /* Ensures the link text color matches the surrounding text */
+
           }
 
         .title {
@@ -28,27 +27,11 @@
             span {
                 display: flex;
                 align-items: center;
-
-                .imageContainer {
-                    width: 100px;
-                    height: 100px;
-                    position: relative;
-                    border-radius: 50%;
-                    overflow: hidden;
-
-                    img {
-                        object-fit: cover;
-                    }
-                }
-
-                h2 {
-                    margin-left: 0.3em;
-                }
             }
 
             h2 {
                 font-size: 6vw;
-                margin: 0px;
+                margin-top: -40px;
                 font-weight: 300;
             }
 
@@ -62,7 +45,6 @@
                 width: 180px;
                 height: 180px;
                 background-color: #455CE9;
-                color: white;
                 border-radius: 50%;
                 position: absolute;
                 display: flex;
@@ -103,7 +85,6 @@
             text-align: center;
 
             h3 {
-                color: grey;
                 font-weight: 500;
                 font-size: 1.2em;
                 margin-bottom: 20px;

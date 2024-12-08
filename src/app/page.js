@@ -11,13 +11,13 @@ import { Analytics } from "@vercel/analytics/react";
 export default function Home() {
   return (
     <div className="home-container">
-      {/* <Header />
-      <MainPage /> */}
+      <Header />
+      <MainPage />
       <About />
       <Work />
-      {/* <Galleries />
+      {/* <Galleries /> */}
       <Contact />
-      <Analytics /> */}
+      <Analytics />
     </div>
   );
 }

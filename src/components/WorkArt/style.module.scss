@@ -1,4 +1,6 @@
 .Main {
+    position: relative;
+    z-index: 1;
     .title {
         height: 10vh;
         width: 100%;
@@ -11,32 +13,28 @@
         }
         @media (min-width: 1025px) and (max-width: 1440px) {
             font-size: 2.8rem;
-            color: red;
             margin-bottom: 150px;
         }
         @media (min-width: 768px) and (max-width: 1024px) {
             font-size: 2.45rem;
             padding-left: 5%;
-            color: green;
             margin-bottom: 150px;
         }
         @media (min-width: 481px) and (max-width: 767px) {
             font-size: 2.1rem;
             padding-left: 5%;
-            color: blue;
             margin-bottom: 100px;
         }
 
         @media (max-width: 480px) {
-            font-size: 1.75rem;
+            font-size: 2rem;
             padding-left: 5%;
-            color: white;
             margin-bottom: 50px;
         }
     }
     .work_container {
         display: grid;
-        padding-bottom: 400px;
+        padding-bottom: 200px;
         background-color: transparent;
         height: auto;
         grid-template-columns: 1fr 1fr; // Default for larger screens
@@ -46,7 +44,7 @@
 
         @media (max-width: 750px) {
             grid-template-columns: 1fr;
-            gap: 80px;
+            gap: 110px;
         }
 
         .card_wrapper {
@@ -88,6 +86,12 @@
             grid-column: 1;
             grid-row: 1;
             transform: translateX(200px);
+            @media (max-width: 750px) {
+                transform: translateX(245px);
+            }
+            @media (max-width: 400px) {
+                transform: translateX(200px);
+            }
 
         }
 
@@ -95,18 +99,39 @@
             grid-column: 2;
             grid-row: 2;
             transform: translateX(-200px);
+            @media (max-width: 750px) {
+                transform: translateX(-245px);
+            }
+            @media (max-width: 400px) {
+                transform: translateX(-200px);
+            }
+
         }
 
         .card_wrapper:nth-child(3) {
             grid-column: 1;
             grid-row: 3;
             transform: translateX(200px);
+            @media (max-width: 750px) {
+                transform: translateX(245px);
+            }
+            @media (max-width: 400px) {
+                transform: translateX(200px);
+            }
+
         }
 
         .card_wrapper:nth-child(4) {
             grid-column: 2;
             grid-row: 4;
             transform: translateX(-200px);
+            @media (max-width: 750px) {
+                transform: translateX(-245px);
+            }
+            @media (max-width: 400px) {
+                transform: translateX(-200px);
+            }
+
         }
 
         .card {
@@ -140,8 +165,12 @@
                 height: 16em;
             }
             @media (max-width: 480px) {
+                width: 24em;
+                height: 14em;
+            }
+            @media (max-width: 400px) {
                 width: 20em;
-                height: 12.8em;
+                height: 12em;
             }
 
             .image_wrapper {
