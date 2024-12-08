@@ -140,7 +140,7 @@
             border-radius: 1.64125em;
             width: 50em;
             height: 32em;
-            padding: 0.545625em; // Padding inside the card
+            padding: .545625em; // Padding inside the card
             position: relative;
             overflow: hidden;
             box-shadow: 0 0 2px rgba(255, 255, 255, 0.25), 11px 5px 26.26px rgba(255, 255, 255, 0.35);
@@ -149,28 +149,47 @@
             justify-content: center;
             align-items: center;
             @media (min-width: 1441px) {
+                border: 2.835px solid #D7D7D7;
                 width: 45em;
                 height: 28.8em;
+                padding: 0.4910625em;
+                border-radius: 	1.477125em;
             }
             @media (min-width: 1025px) and (max-width: 1440px) {
+                border: 2.52px solid #D7D7D7;
                 width: 40em;
                 height: 25.6em;
+                padding: 0.4365em;
+                border-radius: 1.313em;
             }
             @media (min-width: 768px) and (max-width: 1024px) {
+                border: 1.89px solid #D7D7D7;
                 width: 30em;
                 height: 19.2em;
+                padding: 0.327375em;
+                border-radius: 1.148875em;
             }
             @media (min-width: 481px) and (max-width: 767px) {
+                border: 1.575px solid #D7D7D7;
                 width: 25em;
                 height: 16em;
+                padding: 0.2728125em;
+                border-radius:0.820625em;
             }
             @media (max-width: 480px) {
+                border: 1.575px solid #D7D7D7;
                 width: 24em;
                 height: 14em;
+                padding: 0.21825em;
+                border-radius: 0.820625em;
+
             }
             @media (max-width: 400px) {
+                border: 1.26px solid #D7D7D7;
                 width: 20em;
                 height: 12em;
+                padding: 0.21825em;
+                border-radius: 0.6565em;
             }
 
             .image_wrapper {
