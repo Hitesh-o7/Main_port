@@ -19,8 +19,7 @@ export default function Header() {
     useEffect(() => {
         setIsActive(false);
     }, [pathname]);
-
-    // GSAP Scroll Animation for Button
+    
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.to(button.current, {

@@ -209,6 +209,25 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
+                @media (min-width: 1441px) { 
+                    border-radius: 	1.477125em;
+                }
+                @media (min-width: 1025px) and (max-width: 1440px) {
+                    border-radius: 1.313em;
+                }
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    border-radius: 1.148875em;
+                }
+                @media (min-width: 481px) and (max-width: 767px) {
+                    border-radius:0.820625em;
+                }
+                @media (max-width: 480px) {
+                    border-radius: 0.820625em;
+
+                }
+                @media (max-width: 400px) {
+                    border-radius: 0.6565em;
+                }
             }
 
         }
