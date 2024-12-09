@@ -12,6 +12,7 @@
     "@vercel/analytics": "^1.4.1",
     "gasp": "^0.0.2",
     "gsap": "^3.12.5",
+    "locomotive-scroll": "^4.1.4",
     "motion": "^11.11.17",
     "next": "^15.0.3",
     "react": "^18.3.1",

@@ -19,7 +19,7 @@ export default function Header() {
     useEffect(() => {
         setIsActive(false);
     }, [pathname]);
-    
+
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.to(button.current, {
@@ -44,8 +44,8 @@ export default function Header() {
                         <p className={styles.copyright}>©</p>
                         <div className={styles.name}>
                             <p className={styles.codeBy}>Curated by</p>
-                            <p className={styles.Hitesh}>Hitesh</p>
-                            <p className={styles.Thakur}>&nbsp;&nbsp;Thakur</p>
+                            <p className={styles.Hitesh}>Hitesh </p>
+                            <p className={styles.Thakur}>&nbsp;&nbsp;  Thakur</p>
                         </div>
                     </div>
 
