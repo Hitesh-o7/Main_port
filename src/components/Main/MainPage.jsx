@@ -20,7 +20,7 @@ export default function MainPage() {
                     </div>
                     <div className={styles.bottom}>
                         <p>
-                            Designer & Webflow expert
+                            Designer & figma expert
                             Helping you build beautiful and
                             Scalable website experiencess
                         </p>

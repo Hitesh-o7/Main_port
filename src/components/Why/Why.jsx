@@ -1,5 +1,5 @@
 import React from 'react';
-import './Why.css';
+import './Why.scss';
 
 const Why = () => {
     const content = [
