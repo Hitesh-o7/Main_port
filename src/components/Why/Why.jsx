@@ -4,6 +4,7 @@ import './Why.scss';
 const Why = () => {
     const content = [
         {
+            
           number: 1,
           title: 'Efficiency',
           text: 'I focus on delivering high-quality designs and solutions in a short timeframe without compromising on quality.',

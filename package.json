@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.4",
+    "@react-three/rapier": "^1.5.0",
     "@vercel/analytics": "^1.4.1",
     "gasp": "^0.0.2",
     "gsap": "^3.12.5",
@@ -17,7 +20,8 @@
     "next": "^15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scroll-parallax": "^3.4.5"
+    "react-scroll-parallax": "^3.4.5",
+    "three": "^0.173.0"
   },
   "devDependencies": {
     "eslint": "^8",

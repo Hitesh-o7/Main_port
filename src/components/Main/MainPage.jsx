@@ -2,10 +2,12 @@
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import Image from 'next/image';
 import styles from './style.module.scss';
+import Lanyard from '../Card/Lanyard';
 
 export default function MainPage() {
     return (
         <ParallaxProvider>
+            <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
             <main className={styles.MainPag}>
                 {/* Left Side Content */}
                 <div className={styles.left}>
